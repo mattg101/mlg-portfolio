@@ -17,9 +17,9 @@
     "headers": [],
     "cleanUrls": true,
     "trailingSlash": false
-  }
-
-  "env": {
-    "NEXT_PUBLIC_DEPLOY_FROM": "dev-branch"
-  }
   
+
+    "env": {
+      "NEXT_PUBLIC_DEPLOY_FROM": "dev-branch"
+    }
+}
