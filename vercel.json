@@ -1,15 +1,7 @@
 {
   "version": 2,
-  "builds": [
-    { "src": "next.config.js", "use": "@vercel/next" }
-  ],
   "env": {
     "NEXT_PUBLIC_SITE_NAME": "mlg-portfolio",
     "NEXT_PUBLIC_DEPLOY_FROM": "dev-branch"
-  },
-  "rewrites": [],
-  "redirects": [],
-  "headers": [],
-  "cleanUrls": true,
-  "trailingSlash": false
+  }
 }
