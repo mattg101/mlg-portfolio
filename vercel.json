@@ -10,16 +10,12 @@
       }
     ],
     "env": {
-      "NEXT_PUBLIC_SITE_NAME": "mlg-portfolio"
+      "NEXT_PUBLIC_SITE_NAME": "mlg-portfolio",
+      "NEXT_PUBLIC_DEPLOY_FROM": "dev-branch"
     },
     "rewrites": [],
     "redirects": [],
     "headers": [],
     "cleanUrls": true,
-    "trailingSlash": false,
-  
-
-    "env": {
-      "NEXT_PUBLIC_DEPLOY_FROM": "dev-branch"
-    }
+    "trailingSlash": false
 }
