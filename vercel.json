@@ -16,7 +16,7 @@
     "redirects": [],
     "headers": [],
     "cleanUrls": true,
-    "trailingSlash": false
+    "trailingSlash": false,
   
 
     "env": {
