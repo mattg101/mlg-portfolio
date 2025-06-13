@@ -3,14 +3,8 @@
 const nextConfig = {
   images: {
     remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'www-robotics.jpl.nasa.gov',
-        port: '',
-        pathname: '/media/images/**',
-      },
+      { protocol: 'https', hostname: 'images.unsplash.com', pathname: '/**' },
     ],
   },
 };
-
 export default nextConfig;
