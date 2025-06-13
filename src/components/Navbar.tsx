@@ -3,11 +3,14 @@
 'use client';
 
 
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { useState } from 'react';
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+  useEffect(()=>setOpen(false), [pathname]);
   const links = ['Home', 'About', 'Projects', 'Papers', 'Contact'];
 
   return (
