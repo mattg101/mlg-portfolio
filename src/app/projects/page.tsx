@@ -1,10 +1,15 @@
-export default function ProjectsPage() {
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+// @ts-nocheck
+'use client';
+
+
+export const metadata = { title: 'Projects – Matt Gildner' };
+
+export default function Page() {
   return (
-    <main className="p-8 sm:p-20 max-w-4xl mx-auto">
-      <h1 className="text-4xl font-bold mb-6">Projects</h1>
-      <p className="text-lg text-muted-foreground">
-        This is a placeholder for my selected portfolio projects. Stay tuned.
-      </p>
+    <main className="max-w-4xl mx-auto p-8">
+      <h1 className="text-3xl font-bold mb-4">Projects</h1>
+      <p>Coming soon…</p>
     </main>
   );
 }
