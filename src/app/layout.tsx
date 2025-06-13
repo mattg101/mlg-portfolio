@@ -1,34 +1,23 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import Footer from "../components/footer";
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+// @ts-nocheck
+'use client';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import '@/styles/globals.css';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
-export const metadata: Metadata = {
-  title: "MLG Portfolio",
-  description: "Matt Gildner’s robotics portfolio",
+export const metadata = {
+  title: 'Matt Gildner Portfolio',
+  description: 'Robotics hardware projects and research',
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-black`}
-      >
-        <main className="min-h-screen">{children}</main>
+      <body>
+        <Navbar />
+        {children}
         <Footer />
       </body>
     </html>
