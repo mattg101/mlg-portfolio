@@ -1,7 +1,8 @@
+
 'use client';
 
-import { useRouter } from 'next/navigation';
-import { motion } from 'framer-motion';
+import Link from 'next/link';
+import { m } from 'framer-motion';
 
 interface ButtonProps {
   href: string;
@@ -9,15 +10,15 @@ interface ButtonProps {
 }
 
 export default function Button({ href, children }: ButtonProps) {
-  const router = useRouter();
   return (
-    <motion.button
-      onClick={() => router.push(href)}
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
-      className="inline-block px-6 py-3 bg-lava text-base font-semibold text-background rounded-lg shadow-lg hover:bg-lava/90 transition"
-    >
-      {children}
-    </motion.button>
+    <Link href={href} passHref>
+      <m.a
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        className="inline-block px-6 py-3 bg-lava text-background font-semibold rounded-lg shadow-lg hover:bg-lava/90 transition text-base"
+      >
+        {children}
+      </m.a>
+    </Link>
   );
 }
