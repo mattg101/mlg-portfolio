@@ -1,11 +1,15 @@
-'use client';
 
 export default function Footer() {
-  const deployFrom = process.env.NEXT_PUBLIC_DEPLOY_FROM ?? "unknown";
-
   return (
-    <footer className="w-full text-center text-sm text-gray-500 py-4 border-t border-gray-200">
-      Deployed from: <span className="font-mono">{deployFrom}</span>
+    <footer className="bg-base/80 text-text py-6 mt-20">
+      <div className="container mx-auto text-center">
+        <p>© {new Date().getFullYear()} Matt Gildner.</p>
+        <div className="flex justify-center gap-4 mt-2">
+          <a href="mailto:youremail@example.com" className="hover:text-lava transition">Email</a>
+          <a href="https://www.linkedin.com/in/mattgildner" className="hover:text-lava transition">LinkedIn</a>
+          <a href="https://github.com/mattg101" className="hover:text-lava transition">GitHub</a>
+        </div>
+      </div>
     </footer>
   );
 }
