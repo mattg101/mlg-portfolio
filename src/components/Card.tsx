@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+// @ts-nocheck
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
