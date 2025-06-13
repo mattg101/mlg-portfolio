@@ -5,17 +5,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        base: '#0d0d0d',
-        text: '#faf8f7',
-        lava: '#ff6a2d',
-        ice: '#5bc0eb',
+        midnight: '#0a0a12',
+        lavender: '#c7b8ff',
+        accent:   '#ff7043',
       },
       fontFamily: {
-        sans: ['Geist Sans', 'sans-serif'],
-        mono: ['Geist Mono', 'monospace'],
+        sans: ['Inter', 'sans-serif'],
       },
       backgroundImage: {
-        hero: 'linear-gradient(135deg, #ff6a2d 0%, #5bc0eb 100%)',
+        hero: 'url(/hero.jpg)',
       },
     },
   },
