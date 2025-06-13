@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -11,6 +12,7 @@ export default function Home() {
           width={300}
           height={150}
           className="rounded shadow-lg"
+          unoptimized
         />
         <h1 className="text-4xl font-bold">Welcome to my portfolio</h1>
         <p className="text-lg text-center sm:text-left">Explore selected projects, learn about my background, and connect with me.</p>
