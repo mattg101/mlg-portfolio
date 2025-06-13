@@ -1,8 +1,5 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 // @ts-nocheck
-'use client';
-
-
 export const metadata = { title: 'Projects – Matt Gildner' };
 
 export default function Page() {
