@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -6,6 +7,12 @@ export default function Home() {
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <h1 className="text-4xl font-bold">Welcome to my portfolio</h1>
         <p className="text-lg text-center sm:text-left">Explore selected projects, learn about my background, and connect with me.</p>
+        <Link
+          href="/about"
+          className="mt-4 px-4 py-2 rounded bg-lava text-background hover:opacity-80 transition text-sm font-medium"
+        >
+          About Me
+        </Link>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a
