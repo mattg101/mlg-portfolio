@@ -11,7 +11,7 @@ interface ButtonProps {
 export default function Button({ href, children }: ButtonProps) {
   const router = useRouter();
   return (
-    <motion.button<HTMLButtonElement>
+    <motion.button
       type="button"
       onClick={() => router.push(href)}
       whileHover={{ scale: 1.05 }}
