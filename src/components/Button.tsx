@@ -1,7 +1,6 @@
-
 'use client';
 
-import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { m } from 'framer-motion';
 
 interface ButtonProps {
@@ -10,15 +9,16 @@ interface ButtonProps {
 }
 
 export default function Button({ href, children }: ButtonProps) {
+  const router = useRouter();
   return (
-    <Link href={href} passHref>
-      <m.a
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        className="inline-block px-6 py-3 bg-lava text-background font-semibold rounded-lg shadow-lg hover:bg-lava/90 transition text-base"
-      >
-        {children}
-      </m.a>
-    </Link>
+    <m.div
+      onClick={() => router.push(href)}
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      className="inline-block px-6 py-3 bg-lava text-background font-semibold rounded-lg shadow-lg hover:bg-lava/90 transition cursor-pointer"
+      role="button"
+    >
+      {children}
+    </m.div>
   );
 }
